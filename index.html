@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Телефонный справочник</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="telephone-container">
+        <div class="header">
+            <h1>Телефонный справочник</h1>
+        </div>
+        <div class="search">
+            <label>
+                <input type="text" name="input-search" class="input input_search" />
+            </label>
+            <button class="button button_search">Поиск</button>
+        </div>
+        <div class="persons-box">
+
+        </div>
+        <div class="edit-box">
+            <button class="button button_add">Добавить</button>
+            <button class="button button_delete">Удалить</button>
+        </div>
+        <div class="footer"></div>
+        <div class="add-person-window">
+            <div class="person">
+                <h2>Новый пользователь</h2>
+                <label>
+                    <input type="text" name="lastName" placeholder="Фамилия" maxlength="30" class="input-text" />
+                </label>
+                <br />
+                <label>
+                    <input type="text" name="firstName" placeholder="Имя" maxlength="30" class="input-text" />
+                </label>
+                <br />
+                <label>
+                    <input type="text" name="patronymicName" placeholder="Отчество" maxlength="30" class="input-text" />
+                </label>
+                <br />
+                <label>
+                    <input type="text" name="telephone" placeholder="Телефон" maxlength="15" class="input-text" />
+                </label>
+                <br />
+                <label>
+                    <input type="text" name="email" placeholder="Электронная почта" maxlength="30" class="input-text" />
+                </label>
+                <div class="person__alert"></div>
+                <br />
+                <button class="button button_add-person">Добавить пользователя</button>
+                <img src="img/close.png" alt="close" class="add-person-window__close" />
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,320 @@
+
+/* Универсальный селектор, который соответствует любому элементу 
+веб-страницы. Устанавливает одновременно один стиль для всех элементов 
+веб-страницы. */
+* {
+    padding:0; 
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+    
+}
+
+h1 {
+    text-align: center;
+    padding: 40pt 0;
+}
+
+/*0 - выравнивание по вертикали, auto - по горизонтали*/
+.telephone-container {
+	margin: 0 auto;
+    max-width: 1000px;
+}
+
+.header {
+    background-image: url(../img/217149602-antique.jpg);
+}
+
+.search {
+    margin: 0 auto;
+    padding: 40pt 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/217149602-antique.jpg);
+}
+
+.input {
+
+}
+
+.input_search {
+    height: 30pt;
+    width: 300pt;
+    border: none;
+    box-shadow: 2pt 5pt 15pt rgba(100, 100, 100, .5);
+}
+
+.button {
+    font-size: 15pt;
+    padding: 0 20pt;
+}
+
+.button_search {
+    padding: 0 20pt;
+    height: 30pt;
+    background-color: #6699ee;
+    color: white;
+    border: none;
+    box-shadow: 2pt 5pt 15pt rgba(50, 50, 50, .4);
+}
+
+.button_add {
+    margin: 0 10pt;
+}
+
+.button_delete {
+    margin: 0 10pt;
+}
+
+.persons-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50pt 0;
+    background-image: url(../img/bg-lightl-894-textured-paper.jpg);
+}
+
+.button_add-person {
+    margin: 10pt;
+}
+
+.button_call {
+    font-size: 12pt;
+    padding: 0 10pt;
+    z-index: 5;
+    background-color: #88ff88;
+}
+
+.button_call-calling {
+    background-color: #dddddd;
+}
+
+.button_hang-up {
+    font-size: 12pt;
+    padding: 0 10pt;
+    z-index: 5;
+    background-color: #dddddd;
+}
+
+.button_hang-up-calling {
+    background-color: #ff8888;
+}
+
+.person-card {
+    background-color: white;
+    margin: 10pt;
+    box-shadow: 1pt 3pt 8pt rgba(50, 50, 50, .4);
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+}
+
+.person-header {
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #ffddbb;
+    height: 50pt;
+    overflow: hidden;
+}
+
+.person-header__item {
+    margin: 0 10pt;
+    overflow: hidden;
+    max-height: 50pt;
+}
+
+.person-header__item_checkbox {
+
+}
+
+.person-header__item_last-name {
+    width: 150px;
+}
+
+.person-header__item_first-name {
+    width: 120px;
+}
+
+.person-header__item_telephone {
+    width: 100px;
+}
+
+.person-header__item_drop-down {
+
+}
+
+.person-content {
+    display: none;
+    position: relative;
+}
+
+.person-content_show {
+    display: block;
+}
+
+.person-content-item {
+    display: flex;
+    margin: 10pt 0;
+}
+
+.person-content-item__parameter {
+    width: 100px;
+}
+
+.person-content-item__value {
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.person-content-item_buttons {
+    justify-content: space-around;
+}
+
+.edit-box {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20pt 0;
+    background-color: rgba(255, 255, 255, .7);
+}
+
+.footer {
+    background-image: url(../img/seamless-1807376_640.jpg);
+    min-height: 100pt;
+}
+
+.add-person-window {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.add-person-window_show {
+    display: flex;
+}
+
+.add-person-window__close {
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    width: 50px;
+    height: 50px;
+}
+
+.person {
+
+    position: relative;
+    background-color: white;
+    padding: 10pt;
+    text-align: center;
+}
+
+.person h2 {
+    margin: 10pt;
+}
+
+.person label input {
+    margin: 5pt;
+}
+
+.empty {
+    box-shadow: 0 0 5px rgba(255, 0, 0, .7);
+}
+
+.person__alert {
+    color: red;
+    margin: 5pt;
+    display: none;
+}
+
+.person__alert_show {
+    display: block;
+}
+
+.calling-window {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.calling-window_show {
+    display: flex;
+}
+
+.calling-window__text {
+    background-color: white;
+    padding: 10pt 20pt;
+}
+
+.calling-window__text span {
+    font-size: 15pt;
+}
+
+@media (max-width: 600px) {
+    .input_search {
+        width: 220px;
+    }
+
+    .person-card {
+        width: 400px;
+    }
+    
+    .person-header__item {
+        margin: 0 5px;
+    }
+
+    .person-header__item_last-name {
+        width: 100px;
+    }
+    
+    .person-header__item_first-name {
+        width: 100px;
+    }
+    
+    .person-header__item_telephone {
+        width: 80px;
+    }
+}
+
+@media (max-width: 420px) {
+    .input_search {
+        width: 180px;
+    }
+
+    .button {
+        font-size: 12pt;
+        padding: 0 5pt;
+    }
+    
+
+    .person-card {
+        width: 300px;
+    }
+    
+    .person-header__item_first-name {
+        display: none;
+    }
+}
